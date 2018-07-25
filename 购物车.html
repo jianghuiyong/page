@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Car</title>
+	<script type="text/javascript">
+	
+window.onload = function(){
+
+	aa = function (){
+		document.getElementById("buy").value++;
+	}
+	bb = function (){
+		x=document.getElementById("buy").value;
+		if(x>0){
+			document.getElementById("buy").value--;
+		}
+	}
+//绑定事件
+document.getElementsByTagName("body")[0].addEventListener('click',function(e){
+	var ev = ev || window.event;
+	var target = ev.target || ev.srcElement;
+	if(target.nodeName.toLowerCase() == 'input'){
+		alert(target.value);
+	}
+	})
+}
+
+
+	</script>
+</head>
+<body>
+	<input type="button" value="-" onclick="bb()">
+	<input type="text" value="0" id="buy">
+	<input type="button" value="+" onclick="aa()">
+
+</body>
+</html>

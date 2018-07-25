@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.taiji{
+				width: 200px;
+				height: 100px;
+				background-color: red;
+				border-radius: 50%;
+				border-bottom:100px solid green;
+				position: relative;
+				animation: jj1 1s linear infinite;
+			}
+			.taiji:before{
+				content: "";
+				display: block;
+				width:100px;
+				height:100px;
+				position: absolute;
+				left: 0;
+				top: 50px;
+				border-radius: 50%;
+				background-color: red;
+				border: 40px solid green;
+				box-sizing: border-box;
+			}
+			.taiji:after{
+				content: "";
+				display: block;
+				width:100px;
+				height:100px;
+				position: absolute;
+				right: 0;
+				top: 50px;
+				border-radius: 50%;
+				background-color: green;
+				border: 40px solid red;
+				box-sizing: border-box;
+			}
+			@keyframes jj1{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(359deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="taiji">
+		</div>
+
+	</body>
+</html>

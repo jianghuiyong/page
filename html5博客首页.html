@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>江会勇个人博客</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+		#blog{
+			width:1000px;
+			margin:auto;
+			background-position: 50% 0%;
+			background-image:url(./img/1.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		#bloghead{
+			height:200px;
+			padding-top: 50px;
+			padding-left: 50px;
+		}
+
+		ul{
+			list-style: none;
+		}
+		#blogbody:after,ul:after{
+			display:block;
+			content:"";
+			clear:both;
+		}
+		#blognavinfo li{
+			float: left;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		[id^=column_]{
+			/*display:block;*/
+			float:left;
+			overflow:hidden;
+			
+		}
+		#column_1{
+			margin-left:10px;
+			width:210px;
+			box-sizing: border-box;
+			font-size:12px;
+		}
+		#column_1 section{
+			margin-bottom: 10px;
+			padding:10px;
+			background-color: #eee;
+		}
+		#column_1 img{
+			width:100%;
+		}
+		figcaption{
+			text-align:center;
+		}
+		#connhead2>h1{
+			display:inline-block;
+		}
+		[id^=conbody]{
+			margin-top: 10px;
+		}
+		[id^=edit]{
+			float:right;
+		}
+		cite, em {
+   		 font-style: initial;
+		}
+
+		#zcommentsul time{
+			float:right;
+		}
+		#column_2{
+			margin-left:20px;
+			width:750px;
+			box-sizing: border-box;
+			background-color: #eee;
+			padding:10px;
+			font-size:12px;
+
+		}
+		#connhead4>h1{
+			display:inline-block;
+		}
+		[id^=blog_title_h] h1{
+			display:inline-block;
+		}
+		[id^=tagmore] [id^=more]{
+			text-align:right;
+		}
+		[id^=content],[id^=tag_text],[id^=articletag],[id^=blog_title_h],[id^=more]{
+			margin:20px 0;
+		}
+		#bloglist [id^=content]{
+			text-indent: 2em;
+		}
+		#sg_pages{
+			float: right;
+		}
+		#sg_pages li{
+			float:left;
+			margin-left:10px;
+			min-width: 10px;
+			text-align: center;
+		}
+		#sg_pages li a{
+			padding: 4px;
+			background-color: #ddd;
+		}
+		#sg_pgon{
+		}
+		img{
+			width:10px;
+		}
+		#blogfooter{
+			padding:20px;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="blog">
+		<header id="bloghead">
+			<div id="blogtitle">
+				<h1 id="blogname">HTML5 web开发工作室</h1>
+				<p>http://www.jianghuiyong.com</p>
+				<nav id="blognav">
+					<ul id="blognavinfo">
+						<li><a href="">首页</a></li>
+						<li><a href="">博文目录</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div id="blogbody">
+			<div id="column_1">
+				<aside>
+					<section id="conn1">
+						<header id="connhead1">
+							<h1>工作室介绍</h1>
+						</header>
+						<div>
+							<figure>
+								<img src="./img/1.jpg" alt="" />
+								<figcaption>HTML5 web开发工作室</figcaption>
+							</figure>
+						</div>
+					</section>
+					<section id="conn2">
+						<header id="connhead2">
+							<h1>分类</h1>
+							<span id="edit1">
+								<a href="javascript:;" onclick="window.Catedialog.show();return false;">[<cite>管理</cite>]</a>
+							</span>
+						</header>
+						<div id="conbody2">
+							<nav id="classlist">
+								<ul>
+									<li id="dot1"><a href="" target="-blank">全部博文</a><em>（62）</em></li>
+									<li id="dot2"><a href="" target="-blank">HTML 5</a><em>（40）</em></li>
+									<li id="dot3"><a href="" target="-blank">ASP.NETMVC3 快速入门</a><em>（10）</em></li>
+									<li id="dot4"><a href="" target="-blank">C#</a><em>（8）</em></li>
+									<li id="dot5"><a href="" target="-blank">ASP.NETMVC3 书店</a><em>（4）</em></li>
+								</ul>
+							</nav>
+						</div>
+
+					</section>
+					<section id="conn3">
+						<header id="connhead3">
+							<h1>评论</h1>
+						</header>
+						<div id="conbody3">
+							<nav id="zcomments">
+								<ul id="zcommentsul">
+									<li id="commentscell-linedot1">
+										<div id="commentsh1">
+											<span id="commentsname_txt_dot1">
+												<a href="" target="_blank" title="随风">随风</a>
+											</span>
+											<time datetime="2018-07-01T16:59" pubdate>07-01 16:59</time>
+										</div>
+										<div id="commentscontants1">
+											<div id="commentscontants_txt1">
+												<a href="">
+													博主，你好。为什么我在url中输...
+												</a>
+											</div>
+										</div>
+									</li>
+									<li id="commentscell-linedot2">
+										<div id="commentsh2">
+											<span id="commentsname_txt_dot2">
+												[匿名]新浪网友
+											</span>
+											<time datetime="2018-07-01T16:59" pubdate>07-01 16:59</time>
+										</div>
+										<div id="commentscontants2">
+											<div id="commentscontants_txt2">
+												<a href="">
+													很好的文章。非常感谢楼主。
+												</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+				</aside>
+			</div>
+			<div id="column_2">
+				<section id="conn4">
+					<header id="connhead4">
+						<h1>分类</h1>
+						<span id="edit2">
+							<a href="javascript:;" onclick="window.Catedialog.show();return false;">[<cite>管理</cite>]</a>
+						</span>
+					</header>
+					<div id="connbody4">
+						<div id="bloglist">
+							<section>
+								<header>
+									<div id="blog_title_h1">
+										<h1 id="blog_title1">
+											<a href="" target="_blank">
+												HTML5中新增number元素的value
+											</a>
+										</h1>
+										<img src="./img/1.jpg" alt="" />
+										<time datetime="2018-07-01T16:59" pubdate>07-01 16:59</time>
+									</div>
+									<div id="articletag1">
+										<span id="txtb1">分类：</span>
+										<a href="" target="_blank">HTML5</a>
+									</div>
+								</header>
+								<div id="content1">
+									<p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
+									<p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
+								</div>
+								<footer id="tagmore1">
+									<div id="tag_txtc1">
+										<a href="" target="_blank">阅读</a> | <a href="" target="_blank">评论</a> | 没有被转载 | <a href="javascript:;" onclick="return false;">收藏</a>
+									</div>
+									<div id="more1">
+										<span id="smore1">
+											<a href="">查看全文&gt;&gt;</a>
+										</span>
+									</div>
+								</footer>
+							</section>
+							<section>
+								<header>
+									<div id="blog_title_h2">
+										<h1 id="blog_title2">
+											<a href="" target="_blank">
+												HTML5中新增number元素的value
+											</a>
+										</h1>
+										<img src="./img/1.jpg" alt="" />
+										<time datetime="2018-07-01T16:59" pubdate>07-01 16:59</time>
+									</div>
+									<div id="articletag2">
+										<span id="txtb2">分类：</span>
+										<a href="" target="_blank">HTML5</a>
+									</div>
+								</header>
+								<div id="content2">
+									<p>中文中文中文中文中文中文中文中文中文中文中文中文中文
+									<p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
+								</div>
+								<footer id="tagmore2">
+									<div id="tag_txtc2">
+										<a href="" target="_blank">阅读</a> | <a href="" target="_blank">评论</a> | 没有被转载 | <a href="javascript:;" onclick="return false;">收藏</a>
+									</div>
+									<div id="more2">
+										<span id="smore2">
+											<a href="">查看全文&gt;&gt;</a>
+										</span>
+									</div>
+								</footer>
+							</section>
+							<section>
+								<header>
+									<div id="blog_title_h3">
+										<h1 id="blog_title3">
+											<a href="" target="_blank">
+												HTML5中新增number元素的value
+											</a>
+										</h1>
+										<img src="./img/1.jpg" alt="" />
+										<time datetime="2018-07-01T16:59" pubdate>07-01 16:59</time>
+									</div>
+									<div id="articletag3">
+										<span id="txtb3">分类：</span>
+										<a href="" target="_blank">HTML5</a>
+									</div>
+								</header>
+								<div id="content3">
+									<p>中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
+									<p>中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</p>
+								</div>
+								<footer id="tagmore3">
+									<div id="tag_txtc3">
+										<a href="" target="_blank">阅读</a> | <a href="" target="_blank">评论</a> | 没有被转载 | <a href="javascript:;" onclick="return false;">收藏</a>
+									</div>
+									<div id="more3">
+										<span id="smore3">
+											<a href="">查看全文&gt;&gt;</a>
+										</span>
+									</div>
+								</footer>
+							</section>
+							<footer id="sg_page">
+								<ul id="sg_pages">
+									<li id="sg_pgon"><a href="">1</a></li>
+									<li><a href="">2</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">5</a></li>
+									<li id="sg_pgnext"><a href="">下一页 &gt;</a></li>
+									<li id="sg_pgtt">共5页</li>
+								</ul>
+							</footer>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<footer id="blogfooter">
+			<div>
+				<p>版权所有：HTML5 Web开发工作室&nbsp;&nbsp;Copyright 2005 All Rights Reserved</p>
+			</div>
+			<div>联系QQ:1324348149&nbsp;&nbsp;联系电话：13671578832</div>
+		</footer>
+	</div>
+</body>
+</html>
